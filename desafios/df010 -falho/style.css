@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'titulos';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+:root {
+    --coo1: #054d02
+}
+
+body {
+    margin: 0px;
+    background-color: #07ac07ad;
+}
+
+main {
+    background-color: white;
+    width: 1400px;
+    margin: auto;
+   
+    
+}
+
+div.video {
+   margin: 0px -20px 30px -20px;
+   padding: 20px;
+   padding-bottom: 7%;
+   position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+h1 {
+    font-family: 'titulos';
+    margin-top: 0px;
+    padding-left: 50px;
+    color: var(--coo1);
+    font-size: 2em;
+}
+
+p {
+    
+    text-indent: 30px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    margin: auto 30px auto 20px;
+    word-break: normal;
+}
+ul{
+    list-style: none;
+    display:inline-block;
+    margin-left: 300px;
+}
+li {
+    padding: 10px;
+}
+li:hover {
+    background-color: rgba(8, 230, 19, 0.644);
+}
+iframe {
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    height: 600px;
+    width: 1000px;
+}
+
+.tp {
+    font-family: 'titulos';
+    background-color: rgba(42, 165, 4, 0.425);
+    color: rgb(5, 77, 2);
+    padding-left: 50px;
+    font-size: 1.5em;
+}
+
+.tp2 {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgba(42, 165, 4, 0.726);
+    color: rgb(255, 255, 255);
+    padding-left: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+#cabecalho {
+    background-image: linear-gradient(to top, rgb(6, 75, 3) , rgb(0, 141, 24) , rgb(0, 206, 10));
+   
+}
+
+#titulo-principal {
+    color: white;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3em;
+    margin: 0px;
+    padding: 50px 0px 20px 0px;
+    
+}
+#sub-titulo {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: white;
+   
+   
+}
+#menuprincipal {
+    display: inline-block;
+    margin-bottom: 9px;
+}
+#navegacaoprincipal {
+    list-style-type: none;
+    padding-left: 15px;
+    display: inline-block;
+    margin: 0px;
+}
+.nevegacao {
+    display:inline-block; 
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    border: 1px solid black;
+    color: white;
+}
+ul#navegacaoprincipal > li:hover {
+    background-color:rgba(22, 153, 22, 0.726) ;
+
+}
+.porra {
+    margin-left: 300px;
+   
+}
+
+.porra2 {
+    margin-left: 500px;
+}
+#menudebaixo {
+    background-color: rgba(0, 255, 34, 0.356);
+    margin: 10px 20px 10px 20px;
+    border-radius: 20pt;
+    height: 500px;
+}
+#baixo {
+    padding: 50px;
+}
+#roda {
+    text-align: center;
+    padding: 20px;
+    font-weight:400;
+    color: white;
+    background-color: rgb(0, 109, 33);
+    margin: 0px;
+}
+
+@media (max-width:600px) {
+    main {
+        width: 500px;
+    }
+  
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .porra , .porra2 {
+        display: block;
+        margin:auto;
+        width: 100%;
+    }
+    #menudebaixo {
+        height: auto;
+        padding-bottom: 20px;
+    margin-bottom: 0px
+    
+    ;  }
+    #menudebaixo > ul {
+        margin: 0px;
+    }
+    section > p {
+        padding-top: 0px;
+
+    }
+    #baixo { padding: 10px;}
+}
