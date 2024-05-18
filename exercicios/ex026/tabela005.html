@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        table {
+            width: 1000px;
+            border-collapse: collapse;
+            text-align: center;
+            margin: auto;
+        }
+        td , th {
+            border: 1px solid black;
+            padding: 12px 17px 12px 17px;
+
+        }
+       thead > tr > th {
+        background-color: grey;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px black;
+       }
+       th.comum {
+        font-weight: normal;
+        text-align: left;
+       }
+       .tipos {
+        background-color: grey;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px black;
+       }
+     .area {
+        background-color: aqua;
+     }
+     .pika {
+        background-color: violet;
+     }
+     .buceta {
+        background-color: blueviolet;
+     }
+     .cuzinho {
+        background-color: yellow;
+     }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="area">
+            <col class="pika" span="2"> 
+            <col class="buceta" >
+            <col class="cuzinho">
+        </colgroup>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Àrea</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <th scope="row" class="comum" >Matematica</th>
+                <td>0.0.</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" class="comum">Fisica</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" class="comum">Quimica</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" class="comum">Biologia</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row" class="tipos">Media de Exatas</th>
+                <td class="tipos" >0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <th scope="row" class="comum">Historia</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" class="comum">Geografia</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row" class="tipos">Média de Humanas</th>
+                <td class="tipos">0.0.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
