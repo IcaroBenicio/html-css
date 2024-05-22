@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+             margin: 0px;       }
+        body, html {
+            height: 100vh;
+            width: 100vw;
+        }
+        main {
+            position: relative;
+            height: 100vh;
+        }
+        form#caixaform {
+            position: absolute; 
+            top: 50%;
+            left: 50%;
+            transform: translate( -50% , -50%);
+            border: 1px solid black;
+            border-radius: 15px;
+            width: 350px;
+            padding: 20px;
+        }
+        input {
+            padding: 5PX;
+        }
+        p {
+            padding: 20px;
+        }
+        .en12 {
+            margin-left: 70px;
+        }
+        .edit {
+            padding: 10px;
+            border-radius: 7px;
+        }
+   
+        
+    </style>
+</head>
+<body>
+    <main>
+        <form action="cadastro.php" method="post" autocomplete="on" id="caixaform">
+           <p>
+               <label for="iusu">Usuário</label>
+               <input type="text" name="usuario" id="iusu" required minlength="5" maxlength="15" placeholder="Máx 15 caractere" autocomplete="username">
+           </p>
+           <p>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" required minlength="8"  maxlength="20" placeholder="Máx 20 caractere" autocomplete="new-password">
+           </p>
+           <P>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail">
+           </P>
+           <p>
+                <input type="submit" value="Enviar" class="edit">
+                <input type="reset" value="Limpar" class="en12 edit">
+           </p>
+           
+        </form>
+    </main>
+</body>
+</html>
